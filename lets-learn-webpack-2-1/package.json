@@ -1,0 +1,16 @@
+{
+  "name": "jm-udemi-series",
+  "version": "1.0.0",
+  "description": ">npm init-> A [HowToCode.io](https://www.howtocode.io) tutorial on learning [Webpack 2](https://webpack.js.org)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JM_",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10"
+  }
+}
