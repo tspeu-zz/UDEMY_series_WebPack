@@ -65,3 +65,18 @@ para crear un módulo donde colocar cualquier fichero que termine con css
 asi que los preocesa con las lib sytle-loader y css-loader
 #   yarn run build  
 ok
+para usarlo con sass
+#yarn add -D  sass-loader node-sass
+
+# sass-loader node-sass
+y agreager otra regla para sass
+#{
+#                test: /\.scss$/,
+#                use : [
+#                    {loader: 'style-loader'},
+#                    {loader: 'css-loader'},
+ #                   {loader: 'sass-loader'}
+ #               ]
+ #           }
+
+ 
