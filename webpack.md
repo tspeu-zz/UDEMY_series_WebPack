@@ -53,3 +53,15 @@ intala esto
 #       "webpack": "^4.1.0",
 #       "webpack-cli": "^2.0.10"
 
+# LOADERS-->
+transforma el codigo de uno a otro empaqueteado
+# yarn add -D style-loader css-loader
+y añadir a webpack.config,js->
+hasta ahora solo hay una entrada y salida ahora se añade unas reglas 
+para crear un módulo donde colocar cualquier fichero que termine con css 
+#    ,module:{
+#        rules : [{test : /\.css$/,
+#        use : ['style-loader','css-loader']}]}
+asi que los preocesa con las lib sytle-loader y css-loader
+#   yarn run build  
+ok
