@@ -14,7 +14,7 @@ para iniciar un webpack,js
 --> npm init
 agregar deoendencias con npm o con yarn
 #        yar add -D webpack 
-salve en las depencias es como 
+salvar en las depencias es como 
 #        npm --save --dev
 se guarda en 
 #   "devDependencies": {"webpack": "^4.1.0"}
@@ -39,7 +39,7 @@ generará el codigo luego de procesarlo por webpack
 hay que crear un script para poder lanzar webpack en package.json
 #  "scripts": {
 #    "build" : "webpack",
-y se pude llamar desde yanr 
+y se pude llamar desde yarn 
 #   yarn run buid
 o desde npm
 #   npm run build
@@ -48,11 +48,13 @@ The CLI moved into a separate package: webpack-cli.
 Please install 'webpack-cli' in addition to webpack itself to use the CLI.
 -> When using npm: npm install webpack-cli -D
 -> When using yarn: yarn add webpack-cli -D
+
+#npm install --save-dev webpack
+#npm install --save-dev webpack-cli
 intala esto
 #  "devDependencies": {
 #       "webpack": "^4.1.0",
 #       "webpack-cli": "^2.0.10"
-
 # LOADERS-->
 transforma el codigo de uno a otro empaqueteado
 # yarn add -D style-loader css-loader
