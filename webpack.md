@@ -80,5 +80,46 @@ y agreager otra regla para sass
  #                   {loader: 'sass-loader'}
  #               ]
  #           }
+        // use: [
+        //   'style-loader',
+        //   'css-loader',
+        //   'postcss-loader'
+        // ], 
+                  // {loader: 'style-loader'},
+          // {loader: 'css-loader'},
+          // {loader: 'postcss-loader'}
+          // {loader: 'sass-loader'} # add script 
+ "watch" : "webpack --watch"->
+ compila automatico y expone los cambios
 
- 
+ # postCSS loader->
+ hace falta un postcss.config.js->
+ se hace una lista de todos los css uq e se van a utilizar en el proyecto y se exponen a webpack->
+ yarn add -D rucksack-css lost autoprefixer cssnano
+ igual que npm install -save-dev
+ hay que congigurar el modulo en webpackconf 
+
+ *-*-postCSS*-*->plugins css
+ autoprefix-->
+ */*/
+ extract webpack css-> plug in extract-webpack-plugin
+ en distintos css files->
+ yarn add -D extract-text-webpack-plugin
+*-*-*-
+
+sourceMAp ayuda a aceriguar de deonde viene especifico source of code.
+aun cuando esta en un solo file.
+*-*-*-
+cerear multiples bundles de los js-> se separa en distintos y cada uno es un modulo->
+como  usan angular*>
+*/*/crear distind¡tos imputs->
+*/*/htmlWebpackPlugin--> crea el html file
+*/*/cleanWebpackPlugin--> limpia la carpeta dis . la que se exponga para en el output>
+webpack devServer->
+automatic compila todo->
+yarn add -D webpack-dev-server*-*-
+con browserSync-> 
+npm install -g browser-sync-->
+se usa un plugin en webPack->se crea un proxi y toma todo lo que crea  dev-
+proxy usa 8080 y se pdeja adsí o se cambia en funcion de la necesidad-->
+exporta el puerto y se puede acceder en la misma red->

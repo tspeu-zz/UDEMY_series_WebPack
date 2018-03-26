@@ -5,5 +5,21 @@ module.exports = {
     output:{
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    module:{
+        rules :[
+            {
+                test: /\.css$/,
+                use:[
+                    'postcss-loader'
+                ]
+            },
+            {
+                test: /\.scss$/,
+                rules:[
+                    {loader: 'postcss-loader'}
+                ]
+            }
+        ]
     }
 };

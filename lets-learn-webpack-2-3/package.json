@@ -4,7 +4,9 @@
   "description": "A [HowToCode.io](https://www.howtocode.io) tutorial on learning [Webpack 2](https://webpack.js.org)",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -14,13 +16,24 @@
   "author": "Robert Guss - www.howtocode.io, www.robertguss.com",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^8.2.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.23.6",
     "css-loader": "^0.28.5",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "lost": "^8.2.1",
     "node-sass": "^4.5.3",
+    "rucksack-css": "^1.0.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^3.5.5"
-  }
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "browserlist": [
+    ">1%",
+    "last 2 versions"
+  ]
 }
